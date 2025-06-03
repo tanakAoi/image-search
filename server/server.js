@@ -3,6 +3,7 @@ const cors = require("cors");
 const usersRouter = require("./routers/users.router");
 const userRouter = require("./routers/user.router");
 const imagesRouter = require("./routers/images.router");
+const searchRouter = require("./routers/search.router");
 const connectDB = require("./db");
 
 require("dotenv").config();
@@ -20,6 +21,7 @@ connectDB();
 app.use("/api/users", usersRouter);
 app.use("/api/user", userRouter);
 app.use("/api/images", imagesRouter);
+app.use("/api/search", searchRouter);
 
 const PORT = process.env.PORT || 3000;
 

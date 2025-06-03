@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { getImagesFromGoogleSearch } from "../services/imageService";
 import { IImage } from "../models/IImage";
 import { loadSessionData, saveSessionData } from "../utils/sessionUtils";
+import { getImagesFromGoogleSearch } from "../services/searchService";
 
 export const useImageSearch = () => {
   const observerTarget = useRef(null);
