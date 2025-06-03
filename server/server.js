@@ -11,7 +11,15 @@ require("dotenv").config();
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://image-search-three-iota.vercel.app",
+      "http://localhost:5173",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Connect to MongoDB
