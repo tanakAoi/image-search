@@ -1,5 +1,5 @@
 .login {
-  margin: 2rem 0;
+  padding: 4rem 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -69,6 +69,41 @@
     a:hover {
       text-decoration: underline;
       color: var(--dark-color);
+    }
+  }
+
+  &__demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1.2rem;
+      color: rgb(255, 104, 104);
+      margin-bottom: 0.5rem;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: var(--dark-color);
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+
+      li {
+        font-size: 0.9rem;
+        color: var(--dark-color);
+        margin-bottom: 0.2rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
     }
   }
 }

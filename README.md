@@ -13,8 +13,8 @@
 3. `nodemon server`
 
 #### Test
-username: test@gmail.com
-password: ThisIsTest!
+- username: test@gmail.com
+- password: ThisIsTest!
 
 ---
 
